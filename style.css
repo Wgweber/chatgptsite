@@ -12,7 +12,7 @@ body {
 header {
   padding: 20px 0;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #fff;
 }
@@ -22,7 +22,10 @@ header {
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
-  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
 }
 
 .left-ad {
@@ -35,9 +38,9 @@ header {
   background-color: #121212;
   border-radius: 12px;
   padding: 20px;
-  width: 100%;
-  max-width: 800px;
+  flex: 1;
   min-height: 500px;
+  max-width: 768px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
   display: flex;
   flex-direction: column;
@@ -94,4 +97,22 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #444;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 90%;
+  word-wrap: break-word;
+}
+
+.user {
+  background-color: #2a2a2a;
+  align-self: flex-end;
+}
+
+.assistant {
+  background-color: #1f1f1f;
+  align-self: flex-start;
 }
